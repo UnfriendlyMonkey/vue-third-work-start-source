@@ -1,16 +1,14 @@
 <template>
-  <div class="main">
-    <img :src="logo" width="300" height="47" alt="VueWork" />
-    <h1>Добро пожаловать!</h1>
-    <p>
-      Это проект Vuework для обучения на профессиональном онлайн‑курсе<br />
-      <b>«Vue.js для опытных разработчиков».</b>
-    </p>
-  </div>
+  <div>Something is here</div>
+  <app-layout>
+    <home-view />
+  </app-layout>
 </template>
 
 <script setup>
-import logo from "@/assets/img/logo.svg";
+console.log("I'm here")
+import { AppLayout } from "@/layouts";
+import { HomeView } from "@/views";
 </script>
 
 <style lang="scss">
@@ -25,32 +23,32 @@ import logo from "@/assets/img/logo.svg";
   left: 0;
 }
 
-.main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: $white-900;
+// .main {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   color: $white-900;
 
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+//   img {
+//     display: block;
+//     margin: 0 auto;
+//   }
 
-  h1 {
-    @include m-s36-h21;
-    text-align: center;
-    margin-bottom: 0;
-  }
+//   h1 {
+//     @include m-s36-h21;
+//     text-align: center;
+//     margin-bottom: 0;
+//   }
 
-  p {
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-  }
+//   p {
+//     font-size: 20px;
+//     line-height: 30px;
+//     text-align: center;
+//   }
 
-  b {
-    font-size: 1.2em;
-  }
-}
+//   b {
+//     font-size: 1.2em;
+//   }
+// }
 </style>
